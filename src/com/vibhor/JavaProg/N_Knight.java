@@ -2,7 +2,7 @@ package com.vibhor.JavaProg;
 
 public class N_Knight {
     public static void main(String[] args) {
-        int n = 4;
+        int n = 3;
         boolean[][] board = new boolean[n][n];
         knight(board, 0, 0, 4);
     }
@@ -46,8 +46,8 @@ public class N_Knight {
                 return false;
             }
         }
-        if(isValid(board, r-1, c+1)) {
-            if(board[r-1][c+1]) {
+        if(isValid(board, r-1, c+2)) {
+            if(board[r-1][c+2]) {
                 return false;
             }
         }
